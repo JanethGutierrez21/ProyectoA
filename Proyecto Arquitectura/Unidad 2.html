@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Unidad 1 </title>
+</head>
+<body bgcolor= "#f677fd" text = "black">
+    
+    <header> 
+        <p> <font class="tituloUnidad"></i> Arquitectura de Computadoras</font> </i> </p> 
+    </header>
+
+    <header class="unidades">
+        <p> <font class="tituloUnidad"> <a href="Index.html">Unidad 1</a> &nbsp; &nbsp; <a href="Unidad 2.html">Unidad 2</a>  &nbsp; &nbsp; <a href="Unidad 3.html">Unidad 3</a>  &nbsp; &nbsp; <a href="Unidad 4.html">Unidad 4 </a>  &nbsp; &nbsp; <a href="Practicas.html"> Prácticas </a></font> </p>
+    </header>
+
+        <article>
+            <font class="title"> <center> Unidad 2  </center></font>
+            <p> <br> </p>
+
+            <h2 id="2.1">2.1 Organización del Procesador</h2> <hr>
+            <p class="text">Se refiere a la manera en que los diferentes componentes y circuitos del procesador están interconectados y coordinados para llevar a cabo las operaciones y tareas necesarias para procesar datos y ejecutar instrucciones</p><p><br></p>
+            <p class="text">Evolución de los procesadores: Todo comenzó con las calculadoras mecánicas, la maquina analítica de Babbage, las tarjetas perforadas, Memoria, Los relés 
+</p><p><br></p>
+            <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069"> <p><br></p> 
+
+            <h2 id="2.2">2.2 Estructuras de Registros</h2> <hr>
+            <h4> <i> Registros del CPU </i> </h4>
+            <p class="text">Se emplean para controlar las instrucciones en ejecución, manejar direccionamiento de memoria y propiciar la capacidad aritméticaLos registros  se encuentran dentro de cada microprocesador y su función es almacenar los valores de datos, comandos, instrucciones o estados binarios que ordenan que dato debe procesarse. El tamaño de un registro depende del CPU, están los simples (8 a l6 bits) y los complejos (32, 48, 62 bits ).</p><p><br></p>
+
+             <center><img src= "Estructura registros.jpg"></center> <p><br></p>
+           
+            <h1 id="2.2.1">2.2.1 Registros Visibles Para el Usuario</h1>
+            <p class="text">Los registros visibles del usuario son un conjunto de registros que pueden ser accedidos directamente por los programas que se ejecutan en la CPU, son importantes ya que son utilizados por los programas para almacenar temporalmente datos que se están procesado.</p><p><br></p>
+            <p class="text"><b>Se pueden dividir en dos categorias principales:</b> </p><p><br></p>
+            <p class="text">-Registros de proposito general se utilizan para almacenar datos temporales, direcciones de memoria y otros valores importantes para el procesamiento de datos.  </p><p><br></p>
+            <p class="text">Registros de control se utilizan para controlar el flujo de ejecución de un programa. </p><p><br></p>
+             <center><img src= "Registros1.jpg"></center> <p><br></p>
+            
+            <h1 id="2.2.2">2.2.2 Registros de Control y de Estados</h1>
+            <h4> <i> Registros de control </i> </h4>
+            <p class="text">Son utilizados por la unidad de control para controlar el funcionamiento de la CPU y por programas privilegiados del sistema para controlar la ejecución de programas. Regulan la ejecución de instrucciones, controla que no existen desfases entre operaciones del CPU, permite controlar estados, para la transferencia de datos entre la CPU y la memoria. </p><p><br></p>
+            <p class="text">Dentro de estos registros se encuentran:</p><p><br></p>
+            <p class="text"><b>-El CP (contador de programa):</b>  contiene permanentemente la dirección de memoria de la siguiente instrucción a ejecutar  </p><p><br></p>
+            <p class="text"><b>El RI (Registro de Instrucción):</b> contiene la instrucción que se está ejecutando en cada momento. </p><p><br></p>
+            <h4> <i> Registros de estado</i> </h4>
+            <p class="text">El registro de estado, también conocido como registro de bandera, palabra de estado del programa y registro de código de condición, se define como un conjunto de bits de bandera dentro de un procesador. </p><p><br></p>
+            <p class="text">Un registro es un circuito procesador y es muy parecido a una ubicación de memoria, lo que significa que los datos podrían escribirse y leerse. A diferencia de una ubicación de memoria, el registro de estado a menudo no tiene una dirección porque el microprocesador la usa internamente. En una unidad central de procesamiento (CPU) de 8 bits, se puede establecer un bit de registro de estado, igual al número 1, o borrar , igual al número 0, mediante una variedad de resultados de operación del procesador. El procesador a veces establece o borra los bits, pero otras veces, una instrucción de programa particular establece o borra los bits.</p><p><br></p>
+            <p class="text">Los bits de registro de estado también se denominan banderas o bits de bandera, y el programador los utiliza para ciertos fines de programación. Cada bandera en un registro de estado tiene un propósito único. <br> El indicador de acarreo se establece si una operación anterior hizo que el séptimo bit - o indicador negativo - se desbordara, o hiciera que el indicador de transporte se desbordara. Se establece durante los cambios de lógica, comparación y aritmética. El indicador de cero se establece si el resultado de la operación más reciente fue 0.</p><p><br></p>
+
+            
+            <h2 id="2.3">2.3 El Ciclo de Instrucciones</h2> <hr>
+            <h4> <i> Ciclos de computadora </i> </h4>
+            <p class="text">La búsqueda es el proceso de obtener instrucciones de un programa o un elemento de datos de la memoria. El término decodificar se refiere al proceso de traducir las instrucciones a señales que la computadora puede ejecutar. <br> Ejecutar es el proceso de llevar a cabo los comandos. Almacenamiento en este contexto significa escribir el resultado a la memoria. <br> </p><p><br></p>
+            <p class="text">En algunas computadoras, el procesador busca, decodifica, ejecuta y almacena solo una instrucción a la vez. En estas computadoras el procesador espera hasta que una instrucción completa las cuatro etapas del ciclo antes de iniciar a trabajar con la siguiente instrucción.</p><p><br></p>
+            
+            
+            <h1 id="2.3.1">2.3.1 Ciclo Fetch-Decode-Execute</h1>
+            <p class="text">El encargado de ejecutar un programa en una computadora u otro sistema computacional es el CPU, lo realiza siguiendo el llamado ciclo Fetch Decode Execute, con este ciclo se ejecutan todas las tareas que una computadora puede realizar.<br> Este ciclo tiene algunas variantes y conforme ha avanzado el tiempo y la tecnología ha sufrido algunos cambios, pero el ciclo básico se conforma de las siguientes etapas:</p><p><br></p>
+            <p class="text">1.-Fetch: se obtiene la instrucción desde la memoria y se almacena en el registro de la CPU para nuevas indicaciones.</p>
+            <p class="text">2.-Decode: se identifica el modo de direccionamiento de la instrucción y ubicación de datos a tratar.</p>
+            <p class="text">3.-Carga de parámetros: se carga la lectura, cargando todos los datos identificados en el paso anterior.</p>
+            <p class="text">4.-Execute: se ejecuta la instrucción ya configurada, realiza la tarea indicada.</p>
+            <p class="text">5.-Almacenar: se almacena el resultado obtenido de la instrucción.</p>
+            <p class="text">6.-Actualizar PC: se actualiza el registro PC que contiene la siguiente dirección a ejecutar.</p><p><br></p>
+            <center><img src= "Ciclo FDE.jpg"></center> <p><br></p>   
+            
+            <h1 id="2.3.2">2.3.2 Segmentación de Instrucciones</h1>
+            <p class="text">Es una técnica para ejecutar paralela o simultáneamente instrucciones de un programa dentro de un mismo procesador.</p><p><br></p>
+            <p class="text">-Es una forma efectiva para organizar e lhw de la CPU para realizar más de una operación al mismo tiempo.</p><p><br></p>
+            <p class="text">-Consiste en descomponer el proceso de ejecución de las instrucciones en fases o etapas que permitan una ejecución simultánea.</p><p><br></p>
+            <p class="text">-Explota el paralelismo entre las instrucciones de un flujo secuencial.</p><p><br></p>
+            <p class="text">Multiprocesamiento es el uso de 2 o más CPUs en una computadora,Multitareas es la ejecución concurrente de múltiples procesos en un mismo periodo de tiempo.</p><p><br></p>
+            
+            <h1 id="2.3.3">2.3.3 Conjunto de Instrucciones</h1>
+            <p class="text">Es una especificación que detalla las instrucciones que una CPU de un ordenador puede entender y ejecutar, o en el conjunto de todos los comandos implementados por un diseño particular de una CPU.</p><p><br></p>
+            <p class="text">Existen principalmente 3 tipos:CISC (Complex Instruction Set Computer), RISC (Reduced Instruction Set Computer) y SISC (Specific Instruction Set Computer).</p><p><br></p>
+            <p class="text"><b>CISC</b> es una arquitectura de computadoras en la cual cada instrucción puede ejecutar varias funciones </p><p><br></p>
+            <p class="text"><b>RISC</b> es una arquitectura de computadoras en la cual cada instrucción realiza solamente una función, lo cual implica usar más instrucciones, pero estas instrucciones por ser más simples son más rápidas. </p><p><br></p>
+            <p class="text"><b>SISC</b> es una arquitectura de computadoras orientada al procesamiento de tareas en paralelo. Esto se implementa mediante el uso de la tecnología VLSI, que permite a múltiples dispositivos de bajo costo que se utilicen conjuntamente para resolver un problema particular dividido en partes disjuntas. </p><p><br></p>
+            <p class="text"><b>Ortogonales(simétricas):</b>Es una característica de las instrucciones que es considerada algo amplia en términos de lo que requiere una instrucción para ser consideradas ortogonal. Deben de ser independientes en el sentido de que cada una haga una función única y distinta que no repita lo que hace otra, sino que en conjunto el set de instrucciones debe de ser independiente y consistente. </p><p><br></p>
+            <p class="text"><b>CISC</b>Se caracteriza por un número reducido de instrucciones además del uso de pipelining que permite al procesador dividir la ejecución de una instrucción en distintas fases incrementando de esa manera la velocidad de ejecución.</p><p><br></p>
+            <p class="text"><b>RISC</b>No suelen ejecutarse por medio de segmentación o pipelining, sus instrucciones no son ortogonales asi que eso quiere decir que se debe tener cuidado con los registros que se utilizan debido a que no se pueden direccionar de cualquier forma los datos sobre cualquier registro, se debe especificar en la instrucción.</p><p><br></p>
+
+
+
+            <h2 id="2.4">2.3.4 Modos de Direccionamiento</h2> <hr>
+            <p class="text">El direccionamiento en computación se refiere a la forma en que se especifica una dirección de memoria o un registro dentro de una CPU. Existen diversos tipos de direccionamiento, algunos de los mas comunes son:</p><p><br></p>
+            <p class="text"><b>-Direccionamiento inmediato</b> es un modo en informática en el que el valor del operando se incluye directamente en la instrucción.</p><p><br></p>
+            <p class="text"><b>-Direccionamiento directo</b> es en el que la dirección de memoria del operando se especifica directamente en la instrucción.</p><p><br></p>
+            <p class="text"><b>-Direccionamiento indirecto</b> es un modo en el que la dirección de memoria del operando se encuentra en otro registro o en otra dirección de memoria.</p><p><br></p>
+            <p class="text"><b>-Direccionamiento relativo</b>es un nodo en el que la dirección de memoria del operando se especifica  cómo una distancia o desplazamiento desde la dirección actual de la instrucción.</p><p><br></p>
+            <p class="text"><b>-Direccionamiento indexado modo en el que la dirección de memoria del operando se calcula sumando una dirección base y un índice o desplazamiento.</p><p><br></p>
+
+            <h2 id="2.4">2.4 Casos de estudio de CPU reales</h2> <hr>
+            <p class="text">Intel 
+Intel corporation es una empresa estadounidense fundada en 1968 por Robert Nayce y Gordon Moore. La compañía se especializa en la fabricación de microprocesadores, chips y otros componentes electrónicos para ordenadores y dispositivos móviles. Su éxito llego en 1971 cuando desarrollo el primer microprocesador comercialmente viable, el Intel 4004, este procesador revoluciono la industria de la computación al permitir la creación de ordenadores personales más pequeños, más baratos y más eficientes. </p><p><br></p>
+            <p class="text"><b>-Intel 4004</b> </p><p><br></p>
+            <p class="text">-Velocidad de reloj: 740 kHz</p><p><br></p>
+            <p class="text">-Número de transistores: 2.300 </p><p><br></p>
+            <p class="text">-Arquitectura de CPU: de 4 bits, basada en una unidad central de procesamiento (CPU) que ejecutaba instrucciones  almacenadas en memoria ROM </p><p><br></p>
+            <p class="text">--Capacidad de direccionamiento: 12 bits, lo que permitía acceder a un total de 4,096 direcciones de memoria. </p><p><br></p>
+            <p class="text">-Capacidad de procesamiento: 60.000 instrucciones por segundo. </p><p><br></p>
+            <p class="text">-Potencia disipada: 0,6 vatios.</p><p><br></p>
+            <p class="text">-Costo: inicialmente se vendían a 200 dólares estadounidenses.</p><p><br></p>
+            <p class="text"><b>-Intel 8086</b> </p><p><br></p>
+            <p class="text">-Velocidad de reloj: de 4,77 MHz a 10 MHz</p><p><br></p>
+            <p class="text">-Número de transistores: 29.000 </p><p><br></p>
+            <p class="text">-Arquitectura de CPU: de 16 bits, basada en una unidad central de procesamiento (CPU) que ejecutaba instrucciones  almacenadas en memoria ROM.</p><p><br></p>
+            <p class="text">--Capacidad de direccionamiento: 20 bits, lo que permitía acceder a un total 1MB de memoria. </p><p><br></p>
+            <p class="text">-Capacidad de procesamiento: 0,33 MIPS (millones de instrucciones por segundo). </p><p><br></p>
+            <p class="text">-Potencia disipada: 0,6 vatios.</p><p><br></p>
+            <p class="text">-Costo: inicialmente se vendían a 360 dólares estadounidenses.</p><p><br></p>
+        </article>
+    </section>
+</body>
+</html>
